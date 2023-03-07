@@ -5,8 +5,8 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="w-64 h-screen text-white flex flex-col justify-between items-center">
-      <div className="logo flex flex-col justify-between items-center mt-10">
+    <nav className="h-screen text-white flex flex-col justify-between items-center">
+      <div className="logo flex flex-col justify-between items-center mt-8">
         <img src={profilePic} alt="profile-pic" className="profile-Pic" />
         <h2 className="mt-4 font-bold text-xl">MD SHAMIM HOSSEN</h2>
       </div>
