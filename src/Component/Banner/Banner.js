@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import bannerImage from "../../Assets/Image/Banner/Banner.jpg";
 import Typewriter from "typewriter-effect";
+import './Banner.css'
 
 const Banner = () => {
   const [myInfo, setMyInfo] = useState({
-    name: "I Am Shamim Hossen",
+    name: "I'm Shamim Hossen.",
     profession: {
-      freelancer: "I Am A Freelancer",
-      developer: "I Am A MERN Stack Developer",
+      freelancer: "I'm A Freelancer.",
+      developer: "I'm A MERN Stack Developer.",
     },
   });
 
@@ -15,20 +16,20 @@ const Banner = () => {
   const { name, profession } = myInfo;
   const { freelancer, developer } = profession;
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen relative ">
       {/* banner Image */}
-      <img src={bannerImage} alt="bannerImage" />
+      <img src={bannerImage} alt="bannerImage" className="w-full h-full" />
 
       {/* upper layer */}
-      <div></div>
+      <div className="w-full h-full bg-slate-800 opacity-70 absolute bottom-0 left-0"></div>
 
       {/* personal info */}
-      <div>
-        <h1>Welcome</h1>
+      <div className="w-full flex flex-col text-center justify-center items-center text-white  absolute top-2/4 left-2/4 myInfo mt-10">
+        <h1 className="font-bold text-4xl">Welcome</h1>
 
         {/* type writing */}
         {
-          <h1 className="w-96">
+          <h1 className="font-extrabold text-5xl mt-5 mb-5 ">
             <Typewriter
               options={{
                 strings: [name, freelancer, developer],
@@ -39,7 +40,7 @@ const Banner = () => {
           </h1>
         }
 
-        <h2>Based In Dhaka, Bangladesh.</h2>
+        <h2 className="font-semibold text-xl">Based In Dhaka, Bangladesh.</h2>
       </div>
     </div>
   );
