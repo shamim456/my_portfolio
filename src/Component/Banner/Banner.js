@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+
 import bannerImage from "../../Assets/Image/Banner/Banner.jpg";
 import Typewriter from "typewriter-effect";
-import './Banner.css'
+import "./Banner.css";
 
 const Banner = () => {
-  const [myInfo, setMyInfo] = useState({
+  const myInfo = {
     name: "I'm Shamim Hossen.",
     profession: {
       freelancer: "I'm A Freelancer.",
       developer: "I'm A MERN Stack Developer.",
     },
-  });
+  };
 
   // destructor personal info
   const { name, profession } = myInfo;
