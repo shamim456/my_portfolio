@@ -1,4 +1,3 @@
-
 import bannerImage from "../../Assets/Image/Banner/Banner.jpg";
 import Typewriter from "typewriter-effect";
 import "./Banner.css";

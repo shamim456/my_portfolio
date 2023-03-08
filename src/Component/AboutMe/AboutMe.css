@@ -1,6 +1,27 @@
-.about-container{
-    background-color: #212529;
+.about-container {
+  background-color: #212529;
 }
-.upper-layer{
-    background-color: #212529;
+.about-water-Mark {
+  transform: translate(-50%, 0%);
+}
+.about-title {
+  transform: translate(-50%, 0%);
+}
+.hr-line {
+  position: relative;
+  margin-bottom: 15px;
+}
+.hr-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 270px;
+  height: 1px;
+  background: rgba(144, 146, 142);
+  top: 35px;
+}
+.vartical {
+  width: 1px;
+  height: 110px;
+  background: rgba(144, 146, 142);
 }
